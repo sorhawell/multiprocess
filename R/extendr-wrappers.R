@@ -11,9 +11,7 @@
 #' @useDynLib helloextendr, .registration = TRUE
 NULL
 
-#' Return string `"Hello world!"` to R.
-#' @export
-hello_world <- function() .Call(wrap__hello_world)
+run_in_new_process <- function(s) .Call(wrap__run_in_new_process, s)
 
 
 # nolint end

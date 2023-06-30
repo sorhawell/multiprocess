@@ -7,5 +7,8 @@ edition = '2021'
 crate-type = [ 'staticlib' ]
 name = 'helloextendr'
 
+
 [dependencies]
-extendr-api = '*'
+extendr-api = {git = "https://github.com/rpolars/extendr", branch = "multi_proc"}
+#extendr-engine = {git = "https://github.com/rpolars/extendr", branch = "multi_proc"}
+extendr-engine = {path = "../../../extendr_rpolars/extendr-engine"}
